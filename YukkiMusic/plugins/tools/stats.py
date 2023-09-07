@@ -115,7 +115,7 @@ async def gstats_global(client, message: Message, _):
         vidid,
     ) = await YouTube.details(videoid, True)
     title = title.title()
-    final = f"Top Most Played Track on {MUSIC_BOT_NAME}\n\n**Title:** {title}\n\nPlayed** {co} **times"
+    final = f"{MUSIC_BOT_NAME}'de En Çok Çalınan Parça\n\n**Başlık:** {title}\n\nOynadı.** {co} **vakit"
     upl = get_stats_markup(
         _, True if message.from_user.id in SUDOERS else False
     )
